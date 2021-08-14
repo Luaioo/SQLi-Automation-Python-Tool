@@ -15,6 +15,7 @@ The tool Brute-force multiple requests trying all the alphanumeric characters ba
 2. Write the SQLi query and paste it in the `sqli_payload` paramenter 
 
 3. Paste the value of all the cookies in the `cookies_sqli` paramenter
+
 | Screenshot |
 |------------|
 |![Screenshot_2021-08-15_02-38-32](https://user-images.githubusercontent.com/68829493/129457161-22384c76-c433-4a7e-814c-8e8db48152b6.png)
