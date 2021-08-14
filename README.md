@@ -2,15 +2,15 @@
 
 ### Overview
 
-The tool was used for a blind SQL injection vulnerability. The Vulnerable web application uses a tracking cookie for analytics, and performs an SQL query containing the value of the submitted cookie.
+The tool was used for a blind SQL injection vulnerability. The application uses a tracking cookie for analytics, and performs an SQL query containing the value of the submitted cookie.
 
-The results of the SQL query are not returned, and no error messages are displayed. But the application includes a "Welcome back" message in the page if the query returns any rows. 
+The results of the SQL query are not returned, and the application does not respond any differently based on whether the query returns any rows. If the SQL query causes an error, then the application returns a custom error message. 
 
 
 ### How to Setup
 1. Setup your burpsuite proxy to `127.0.0.1:8080`
-2. Write any SQLi query and paste it in the `sqli_payload` paramenter 
-3. Paste the value of all your cookies value in the `cookies` paramenter
+2. Write the SQLi query and paste it in the `sqli_payload` paramenter 
+3. Paste the value of all the cookies in the `cookies_sqli` paramenter
 
 
 ### How to Reproduce 
