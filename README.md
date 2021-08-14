@@ -1,4 +1,4 @@
-# Blind SQL injection Automation Python Tool
+# Blind SQLi Automation Tool (Python)
 
 ## Vulnerability
 The tool was used for a blind SQL injection vulnerability. The application uses a tracking cookie for analytics, and performs an SQL query containing the value of the submitted cookie.
