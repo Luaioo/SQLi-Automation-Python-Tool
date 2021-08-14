@@ -14,15 +14,14 @@ The results of the SQL query are not returned, and the application does not resp
 
 
 ### How to Reproduce 
-Python3 (File-Name.py) "Vulnerable Applicatin URL"
+Use this command to run the python tool you just setup:
 
-Python3 SQLi-Tool.py "https://Test.com/view"
-
+`Python3 (File-Name.py) "Vulnerable Applicatin URL"`
 
 
 | Screenshot |
-| -----------  |
-|![Capture](https://user-images.githubusercontent.com/33663456/122086588-6bf97b00-ce36-11eb-8261-31a627fc54bc.PNG)|
+|------------|
+|![Screenshot_2021-08-14_21_27_21](https://user-images.githubusercontent.com/68829493/129447790-1d2c0f8c-7fd7-4ba4-8f22-ea7a014b6dfc.png)|
 
 
 
