@@ -21,12 +21,8 @@ Use this command to run the python tool you just setup:
 
 | Screenshot |
 |------------|
-|![Screenshot_2021-08-14_21_27_21](https://user-images.githubusercontent.com/68829493/129447790-1d2c0f8c-7fd7-4ba4-8f22-ea7a014b6dfc.png)|
+|![Screenshot_2021-08-14_21-31-13](https://user-images.githubusercontent.com/68829493/129447871-2ea99dda-c312-4229-ab89-782ee70acc19.png)
+|
 
-
-
-
-## Testing  
-The develoepr has tested only  two major functions which are get list of movies as well as get movie by ID 
 
 
