@@ -16,13 +16,13 @@ The results of the SQL query are not returned, and the application does not resp
 ### How to Reproduce 
 Use this command to run the python tool you just setup:
 
-`Python3 (File-Name.py) "Vulnerable Applicatin URL"`
+`Python3 File-Name.py "Vulnerable URL"`
 
 
 | Screenshot |
 |------------|
 |![Screenshot_2021-08-14_21-31-13](https://user-images.githubusercontent.com/68829493/129447871-2ea99dda-c312-4229-ab89-782ee70acc19.png)
-|
+
 
 
 
