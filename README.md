@@ -15,6 +15,7 @@ The results of the SQL query are not returned, and the application does not resp
 
 ### How to Reproduce 
 Python3 (File-Name.py) "Vulnerable Applicatin URL"
+
 Python3 SQLi-Tool.py "https://Test.com/view"
 
 
