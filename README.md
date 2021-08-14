@@ -9,7 +9,7 @@ The results of the SQL query are not returned, and the application does not resp
 
 The tool Brute-force multiple requests trying all the alphanumeric characters based on the ascii table. when any charicter matches the first letter of the password it moves on to checkes the secound charcter and so on until the full password is identified.
 
-### How to Setup
+### How to Setup:
 1. Setup your burpsuite proxy to `127.0.0.1:8080`
 
 2. Write the SQLi query and paste it in the `sqli_payload` paramenter 
@@ -26,7 +26,7 @@ The tool Brute-force multiple requests trying all the alphanumeric characters ba
 cookies_sqli = {'TrackingId': 'Paste Here' + sqli_payload_encoded, 'session': 'Paste Here'}
 ```
 
-### How to Reproduce 
+### Usage:
 Use this command to run the python tool you just setup:
 
 `Python3 File-Name.py "Vulnerable URL"`
