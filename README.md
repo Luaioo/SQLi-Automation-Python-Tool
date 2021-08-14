@@ -9,7 +9,6 @@ The results of the SQL query are not returned, and the application does not resp
 
 ### How to Setup
 1. Setup your burpsuite proxy to `127.0.0.1:8080`
-![Screenshot_2021-08-15_02-31-16](https://user-images.githubusercontent.com/68829493/129457140-1c8654e8-0c51-4462-845a-b2c1815b2a19.png)
 
 2. Write the SQLi query and paste it in the `sqli_payload` paramenter 
 ![Screenshot_2021-08-15_02-37-32](https://user-images.githubusercontent.com/68829493/129457153-9d494527-3bfc-4104-82b5-6b11f0d1d516.png)
